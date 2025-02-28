@@ -38,7 +38,7 @@ export default function Page() {
   }
   return (
     <div className="relative container py-[114px]">
-      <div className="absolute">
+      <div className="absolute hidden md:block">
         <Vector />
       </div>
       <div className="flex w-full flex-col items-center">

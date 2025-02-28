@@ -64,7 +64,7 @@ export default function Header() {
               <Menu />
             </Button>
           </SheetTrigger>
-          <SheetContent side="left">
+          <SheetContent side="left" className="w-[90%]">
             <SheetHeader>
               <SheetTitle>
                 <BrandLogo />

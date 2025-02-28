@@ -42,13 +42,13 @@ export default function Page() {
         <Vector />
       </div>
       <div className="flex w-full flex-col items-center">
-        <div className="w-[450px] flex flex-col items-center">
+        <div className="w-full max-w-[450px] flex flex-col items-center">
           <h1 className="text-[62px] font-medium mb-6 leading-none">Sign In</h1>
           <p className="text-[#646A69]">Access our services in one click</p>
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              className="space-y-6 w-full mt-[80px]"
+              className="space-y-6 w-full mt-[80px] z-20"
             >
               <FormField
                 control={form.control}

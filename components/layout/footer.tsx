@@ -1,15 +1,15 @@
+import { Mail, MapPin, Phone } from "lucide-react";
 import Facebook from "@/assets/facebook";
 import Instagram from "@/assets/instagram";
 import Linkedin from "@/assets/linkedin";
 import Logo from "@/assets/logo";
 import X from "@/assets/x";
-import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
     <div className="bg-[#1A1B1E]">
       <div className="container py-20">
-        <div className="flex justify-between mb-[160px]">
+        <div className="flex flex-col md:flex-row gap-20 justify-between mb-[160px]">
           <div className="flex flex-col">
             <Logo />
             <h1 className="text-[#606060] mt-3">Dokan FrontEnd Test</h1>
@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex gap-[120px]">
+          <div className="flex gap-[60px] md:gap-[120px] flex-wrap md:flex-nowrap">
             <ul className="text-primary-foreground flex flex-col gap-3 text-xl">
               <li>Home</li>
               <li>Features</li>
@@ -63,11 +63,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex justify-between">
+        <div className="flex flex-col md:flex-row gap-20 justify-between">
           <p className="text-[#606060]">
             &copy; 2025 Dokan Inc. All rights reserved.
           </p>
-          <p className="text-[#606060] flex gap-[45px]">
+          <p className="text-[#606060] flex gap-[20px] md:gap-[45px]">
             <span>Privacy policy</span>
             <span>GDPR</span>
             <span>Terms of service</span>
